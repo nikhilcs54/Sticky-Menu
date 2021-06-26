@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Sticky Minu Bar</title>
+    <style>
+        body{
+            margin:0px;
+        }
+        #header{
+            text-align:center;
+        }
+        #logo{
+            width:200px;
+            height:auto;
+        }
+        #menu-bar{
+            text-align: center;
+            background-color: cadetblue;
+        }
+        #menu-bar li{
+         display:inline-block;
+         padding:15px 10px;
+         color: white;
+         font-size: 18px;
+         font-weight: bold;
+        }
+        #container{
+            text-align: center;
+            padding:50px 100px;
+        }
+        #about-img{
+            width: 100%;
+        }
+        .sticky{
+            position: fixed;
+            top:0px;
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+   <div id="header">
+       <img src="https://png.pngtree.com/png-clipart/20200722/original/pngtree-leaf-nature-logo-png-image_5058555.jpg" id="logo">
+
+   </div> 
+   <nav id="menu-bar" class="sticky">
+       <li>Home</li>
+       <li>About Us</li>
+       <li>Our Team</li>
+       <li>Client</li>
+       <li>Contact us</li>
+   </nav>
+   <div id="container">
+    <h1 class="text">About Us</h1>
+    <img id="about-img" src="https://www.susangreenecopywriter.com/wp-content/uploads/2013/01/iStock_000039291924_Medium.jpg">
+    <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae vel repudiandae accusantium eligendi unde ea perspiciatis animi obcaecati molestias earum error nulla deserunt a, provident fugiat assumenda totam aliquam mollitia veritatis architecto. Molestias delectus voluptatibus excepturi totam qui quis facere odit praesentium a et aliquid dolorum sequi optio repellat eius aut, dolore neque placeat iure possimus laborum, sed quas. Amet autem obcaecati molestiae dicta, tenetur numquam incidunt reiciendis doloremque, modi aut nostrum earum quia placeat dolore dolorum sunt. Veniam perspiciatis excepturi repellat, in neque expedita. Quos, eveniet? Voluptas iure dicta a labore sit vero temporibus alias, eum odio. Qui ea sit odit optio, ratione accusamus laboriosam dolore cum sapiente placeat quod. Facere magnam, excepturi veritatis reiciendis ipsum corporis praesentium, consequuntur dolorem at quidem vel mollitia deleniti iure id repellat ex provident dolor ullam eaque ipsa eligendi minima! Vero error voluptates velit quisquam quis commodi, soluta deserunt. Cupiditate, atque. Consequatur error, laborum voluptas recusandae quaerat nemo alias veniam maxime aliquid odio, sit tenetur. Ipsum autem aut commodi, minus facere aliquam doloremque veritatis nobis perspiciatis illum nam officiis. Dolores dolorum exercitationem vel impedit, similique itaque consequatur rem, suscipit sapiente neque iusto culpa atque at animi nesciunt consequuntur veniam. Voluptates sequi veniam nihil odit dolores alias! Accusantium laborum quidem, voluptate corporis ratione nisi, quia nesciunt at doloremque voluptatibus, sequi vitae asperiores voluptates dolores molestias fugiat? Deleniti autem ut, enim sunt, numquam officiis vitae similique cumque accusantium impedit dolore voluptate quidem ullam molestias nemo quo cupiditate eos repellat labore odit iste harum aliquid maxime laudantium? Officia inventore incidunt nam autem sunt. Minus, quo omnis! Veritatis necessitatibus, eos quam blanditiis neque soluta veniam, aperiam officiis voluptates dolor consectetur ipsum numquam. Velit veritatis voluptate ut minima, accusamus nemo odit odio hic excepturi magni ipsa optio exercitationem tempore error saepe recusandae illo voluptatibus accusantium? Minus cumque et recusandae at, porro, sed voluptatum pariatur fugiat ratione veritatis provident voluptatem possimus eum? Quae fugiat neque quia pariatur ullam sapiente quibusdam maiores nihil culpa possimus dolor vitae, cum perspiciatis consequatur beatae atque voluptatem assumenda? Tempora ipsam aliquam minus dolor explicabo soluta beatae! Ullam officia tenetur obcaecati voluptatem deserunt soluta veritatis fugiat minus perspiciatis asperiores tempore eum dolorum corporis culpa nobis, voluptatum mollitia modi recusandae dolorem facilis ipsam. Dignissimos labore culpa ut ad natus veniam ratione cumque beatae eligendi officiis ex illum quis voluptatum error impedit magnam non, eveniet praesentium sint vitae ducimus assumenda repellat. Quidem, quaerat aut? Reiciendis et praesentium consequatur dignissimos cumque, itaque esse iure dolorum exercitationem nostrum, quo nesciunt, asperiores molestiae. Ipsam voluptas nam non debitis. Earum nobis quia sunt quibusdam ipsum tempore sequi velit voluptas ipsa id aliquid alias iure enim voluptate fugiat quaerat dolorum architecto corrupti nemo similique, dolore impedit eum sit. Obcaecati, est qui vitae eaque quod laboriosam repellat vel eius consectetur iste accusamus adipisci dicta nihil illum excepturi soluta earum harum officiis sint ipsa nam sequi. Officia inventore accusamus alias provident fugiat quisquam nisi consequatur dignissimos autem repellendus, quis iste quas quaerat doloremque at tenetur sunt praesentium culpa iusto rem, sit cum impedit deleniti.
+
+    </p>
+   </div>
+   <script>
+       window.addEventListener('scroll',function(){
+           let navbar=document.getElementById("menu-bar");
+           if(window.pageYOffset>=190){
+               navbar.classList.add('sticky');
+           }
+           else{
+            navbar.classList.remove('sticky');
+           }
+       })
+   </script>
+</body>
+</html>
